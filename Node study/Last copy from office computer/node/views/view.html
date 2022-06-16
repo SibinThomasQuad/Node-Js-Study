@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<table border="1" class="table">
+        <tr>
+            <th>S.N</th>
+            <th>Full Name</th>
+            <th>Email Address</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        
+        <%
+        if(datas.length!=0){
+        var i=1;
+        datas.forEach(function(data){
+        %>
+        <tr>
+            <td><%=i; %></td>
+            <td><%=data.ip %></td>
+            <td><%=data.ip %></td>
+            <td><%=data.ip %></td>
+            <td><%=data.ip %></td>
+            <td><%=data.ip %></td>
+            <td><%=data.ip %></td>
+        </tr>
+        <%  i++; }) %>
+        <% } else{ %>
+            <tr>
+                <td colspan="7">No Data Found</td>
+            </tr>
+        <% } %>
+    </table>
